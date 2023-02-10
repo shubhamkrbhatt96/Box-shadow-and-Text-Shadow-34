@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and Text Shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        /* border: 2px solid red; */
+        margin: 23px 12px;
+        background-color: burlywood;
+
+        /* box-shadow: 4px 4px green; */
+        /* if put the -ve sign in box-shadow it will refer to the reverse css property of the box-shadow property. */
+        /* box-shadow: offset-x offset-y color; syntax for box-shadow for reference. */
+        /* box-shadow: offset-x offset-y color blur shadow color; */
+        /* box-shadow: offset-x offset-y color blur shadow spread shadow color; */
+        box-shadow: -4px -4px green;
+
+        /* In this syntax down for box-shadow 8px refers to blur radius whose effect you see on the site. */
+        box-shadow: 3px 5px 30px violet;
+
+        /* in this syntax down we will see the 44px refers to the spread radius whose effect we see on the site. */
+        box-shadow: 4px 4px 16px 22px green;
+
+        /* So this inset property in css will bring the changes in the inner side of the box and as you increase it it will grow inside the box */
+        box-shadow: inset 5px 8px pink;
+
+        /* To make multiple shadows in the css box-shadows do it with the , in between the two shadows */
+        box-shadow: inset 12px 35px lightgreen, 16px 24px darkmagenta;
+    }
+    .card h2{
+        /* text-shadow property will work on your text written on your header */
+        text-shadow: 2px 1px white;
+        text-shadow: 3px 2px 6px darkorange;
+    }
+</style>
+
+<body>
+    <!-- Ask doubt-if i use h1 ,h2 and h3 as header why it differs shapes in font for headers and if keep h2 only then the shape remain uniform and in same position display in site  -->
+    <div class="container">
+        <!-- div.card#card-$*3 -->
+        <div class="card" id="card-1">
+            <h2>This is Excel Course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, praesentium. Recusandae quae iusto
+                inventore laudantium cum libero fugit ipsam aut doloribus nobis deserunt itaque atque iste, quia placeat
+                reiciendis! Labore nobis a veritatis eveniet.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>This is DBMS Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ducimus corporis. Quam qui ipsam in at
+                commodi, neque laborum earum sunt deleniti, quos eos a. Dignissimos laborum qui repellat tempora enim
+                dolore eos cumque!</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, labore corrupti dolore, placeat iusto
+                nesciunt iure perspiciatis rem fuga rerum consequuntur illum odio quaerat officiis unde quasi deserunt
+                blanditiis. Debitis animi harum ex impedit!</p>
+        </div>
+    </div>
+</body>
+
+</html>
